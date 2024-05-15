@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".EkleActivity">
+
+    <ImageView
+        android:id="@+id/GimgFoto"
+        android:layout_width="271dp"
+        android:layout_height="176dp"
+        android:onClick="GaddImage"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+    <EditText
+        android:id="@+id/gedtAd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Film Adı" />
+
+    <Spinner
+        android:id="@+id/gedtTur"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/gedtPuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="15dp"
+        android:hint="Film Puan" />
+
+    <Button
+        android:id="@+id/btnGuncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:onClick="guncelle"
+        android:text="Güncelle" />
+</LinearLayout>
